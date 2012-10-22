@@ -102,7 +102,7 @@
 		13C1A10016353AF500EA9B84 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/InfoPlist.strings; sourceTree = "<group>"; };
 		13C1A10E163548FD00EA9B84 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* moyan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moyan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Reader.app */,
+				1D6058910D05DD3D006BFB54 /* moyan.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,8 +253,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				134E3345163550AE0039A4CF /* AdSupport.framework */,
-				134E3343163550970039A4CF /* StoreKit.framework */,
 				134E333216354E520039A4CF /* Frame */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				45BD5A7C13AE6C3B00D6FE97 /* Sources */,
@@ -301,6 +299,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				134E3345163550AE0039A4CF /* AdSupport.framework */,
+				134E3343163550970039A4CF /* StoreKit.framework */,
 				134E334116354E830039A4CF /* SystemConfiguration.framework */,
 				134E333F16354E770039A4CF /* AudioToolbox.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -410,7 +410,7 @@
 			);
 			name = Reader;
 			productName = Reader;
-			productReference = 1D6058910D05DD3D006BFB54 /* Reader.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* moyan.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -547,7 +547,7 @@
 					"\"$(SRCROOT)/Frame/Admob\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = Reader;
+				PRODUCT_NAME = moyan;
 			};
 			name = Debug;
 		};
@@ -565,7 +565,7 @@
 					"\"$(SRCROOT)/Frame/Admob\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = Reader;
+				PRODUCT_NAME = moyan;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -602,7 +602,7 @@
 					"\"$(SRCROOT)/Frame/Admob\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = Reader;
+				PRODUCT_NAME = moyan;
 			};
 			name = Testing;
 		};

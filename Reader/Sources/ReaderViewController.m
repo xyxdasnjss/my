@@ -33,9 +33,13 @@
 #import "ReaderThumbQueue.h"
 
 #import <MessageUI/MessageUI.h>
+#import "GADBannerView.h"
 
 @interface ReaderViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate, MFMailComposeViewControllerDelegate,
 									ReaderMainToolbarDelegate, ReaderMainPagebarDelegate, ReaderContentViewDelegate, ThumbsViewControllerDelegate>
+{
+    GADBannerView *bannerView_;
+}
 @end
 
 @implementation ReaderViewController
@@ -314,6 +318,22 @@
 	self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
 
 	CGRect viewRect = self.view.bounds; // View controller's view bounds
+    viewRect.size.height -= GAD_SIZE_320x50.height;
+    viewRect.origin.y += GAD_SIZE_320x50.height;
+    
+    
+    bannerView_ = [[GADBannerView alloc]
+                   initWithFrame:CGRectMake((self.view.frame.size.width - GAD_SIZE_320x50.width)*.5 ,
+                                            0 ,
+                                            GAD_SIZE_320x50.width,
+                                            GAD_SIZE_320x50.height)];
+    
+    bannerView_.adUnitID = MY_BANNER_UNIT_ID;
+    bannerView_.rootViewController = self;
+    [self.view addSubview:bannerView_];
+//    [bannerView_ loadRequest:[GADRequest request]];
+    
+    
 
 	theScrollView = [[UIScrollView alloc] initWithFrame:viewRect]; // All
 
@@ -453,6 +473,22 @@
 	[self updateScrollViewContentViews]; // Update content views
 
 	lastAppearSize = CGSizeZero; // Reset view size tracking
+    
+    if (interfaceOrientation == UIInterfaceOrientationPortrait ||interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+               
+        bannerView_.frame = CGRectMake((self.view.frame.size.width - GAD_SIZE_320x50.width)*.5,
+                                       0,
+                                       GAD_SIZE_320x50.width,
+                                       GAD_SIZE_320x50.height);
+        
+    }else{
+               
+        bannerView_.frame = CGRectMake((self.view.frame.size.width - GAD_SIZE_320x50.width)*.5,
+                                       0,
+                                       GAD_SIZE_468x60.width,
+                                       GAD_SIZE_468x60.height);
+    }
+    
 }
 
 /*

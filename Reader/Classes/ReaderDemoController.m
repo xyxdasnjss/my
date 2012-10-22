@@ -27,6 +27,8 @@
 #import "ReaderViewController.h"
 #import "GADBannerView.h"
 
+
+
 @interface ReaderDemoController () <ReaderViewControllerDelegate,UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *_mTableView;
@@ -46,6 +48,9 @@
 #define DEMO_VIEW_CONTROLLER_PUSH FALSE
 
 #pragma mark UIViewController methods
+
+#define kIphoneNavH     32.0f  //导航栏高度,横屏
+#define kIphoneNavS     44.0f  //导航栏高度,竖屏
 
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -74,16 +79,17 @@
 
 	self.view.backgroundColor = [UIColor clearColor]; // Transparent
 
-	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-
-	NSString *name = [infoDictionary objectForKey:@"CFBundleName"];
-
-	NSString *version = [infoDictionary objectForKey:@"CFBundleVersion"];
-
-	self.title = [NSString stringWithFormat:@"%@ v%@", name, version];
+//	NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+//
+//	NSString *name = [infoDictionary objectForKey:@"CFBundleName"];
+//
+//	NSString *version = [infoDictionary objectForKey:@"CFBundleVersion"];
+//
+//	self.title = [NSString stringWithFormat:@"%@ v%@", name, version];
+    self.title = @"莫言小说精选";
     
     bannerView_ = [[GADBannerView alloc]
-                   initWithFrame:CGRectMake(0.0,
+                   initWithFrame:CGRectMake((self.view.frame.size.width - GAD_SIZE_320x50.width)*.5,
                                             self.view.frame.size.height -
                                             GAD_SIZE_320x50.height ,
                                             GAD_SIZE_320x50.width,
@@ -92,14 +98,14 @@
     bannerView_.adUnitID = MY_BANNER_UNIT_ID;
     bannerView_.rootViewController = self;
     [self.view addSubview:bannerView_];
-    [bannerView_ loadRequest:[GADRequest request]];
+//    [bannerView_ loadRequest:[GADRequest request]];
     
 
 
     self.itemsArray = [[NSMutableArray alloc] init];
     [self initItemsArray];
     
-    CGRect tableRect = CGRectMake(0.0f, 44.0f, kDeviceWidth, self.view.frame.size.height - 44 - GAD_SIZE_320x50.height);
+    CGRect tableRect = CGRectMake(0.0f, kIphoneNavS, kDeviceWidth, self.view.frame.size.height - kIphoneNavS - GAD_SIZE_320x50.height);
     
     _mTableView = [[UITableView alloc]initWithFrame:tableRect style:UITableViewStyleGrouped];
     _mTableView.delegate = self;
@@ -107,7 +113,7 @@
     _mTableView.backgroundView = nil;
 	_mTableView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;//UIViewAutoresizingFlexibleTopMargin;
 	_mTableView.autoresizingMask |= UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-//	_mTableView.center = CGPointMake(kDeviceWidth / 2.0f, KDeviceHeight / 2.0f);
+	_mTableView.center = CGPointMake(kDeviceWidth * .5, KDeviceHeight * .5);
     [self.view addSubview:_mTableView];
     
     
@@ -174,12 +180,27 @@
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration
 {
     if (interfaceOrientation == UIInterfaceOrientationPortrait ||interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        CGRect tableRect = CGRectMake(0.0f, kIphoneNavS, kDeviceWidth, self.view.frame.size.height - kIphoneNavS - GAD_SIZE_320x50.height);
+        _mTableView.frame = tableRect;
         
+        bannerView_.frame = CGRectMake((self.view.frame.size.width - GAD_SIZE_320x50.width)*.5,
+                                       self.view.frame.size.height -
+                                       GAD_SIZE_320x50.height ,
+                                       GAD_SIZE_320x50.width,
+                                       GAD_SIZE_320x50.height);
         
     }else{
-        CGRect tableRect = CGRectMake(0.0f, 44.0f, kDeviceWidth, self.view.frame.size.height - 44 - GAD_SIZE_320x50.height);
+        CGRect tableRect = CGRectMake(0.0f, kIphoneNavH, self.view.frame.size.width, self.view.frame.size.height - kIphoneNavH - GAD_SIZE_468x60.height);
         _mTableView.frame = tableRect;
+        
+        bannerView_.frame = CGRectMake((self.view.frame.size.width - GAD_SIZE_468x60.width)*.5,
+                                       self.view.frame.size.height -
+                                       GAD_SIZE_468x60.height ,
+                                       GAD_SIZE_468x60.width,
+                                       GAD_SIZE_468x60.height);
     }
+    
+    
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
@@ -220,9 +241,12 @@
     
 	pdfs = [[NSBundle mainBundle] pathsForResourcesOfType:@"pdf" inDirectory:nil];
     
+    NSLog(@"%@",[pdfs description]);
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     for (NSString * str in pdfs) {
-        NSRange range = [str rangeOfString:@"Reader.app/"];
-//        NSLog(@"%@",[str substringFromIndex:(range.location+range.length)]);
+        NSRange range = [str rangeOfString:[NSString stringWithFormat:@"%@.app/",[infoDictionary objectForKey:@"CFBundleName"]]];
+        
+        NSLog(@"%@",[str substringFromIndex:(range.location+range.length)]);
         [_itemsArray addObject:[str substringFromIndex:(range.location+range.length)]];
     }
     
