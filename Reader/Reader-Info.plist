@@ -11,10 +11,29 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>AppIcon-144.png</string>
-		<string>AppIcon-114.png</string>
+		<string>114.png</string>
 		<string>AppIcon-072.png</string>
-		<string>AppIcon-057.png</string>
+		<string>57.png</string>
+		<string>Icon.png</string>
+		<string>icon@2x.png</string>
 	</array>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>AppIcon-144.png</string>
+				<string>114.png</string>
+				<string>AppIcon-072.png</string>
+				<string>57.png</string>
+				<string>Icon.png</string>
+				<string>icon@2x.png</string>
+			</array>
+			<key>UIPrerenderedIcon</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>com.xyxd.ebooks.Reader.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

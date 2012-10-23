@@ -12,14 +12,19 @@
 		134E334216354E830039A4CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134E334116354E830039A4CF /* SystemConfiguration.framework */; };
 		134E3344163550970039A4CF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134E3343163550970039A4CF /* StoreKit.framework */; };
 		134E3346163550AE0039A4CF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134E3345163550AE0039A4CF /* AdSupport.framework */; };
-		13C1A0D716352F2900EA9B84 /* 生死疲劳.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13C1A0CF16352F2900EA9B84 /* 生死疲劳.pdf */; };
-		13C1A0D816352F2900EA9B84 /* 红高粱.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13C1A0D016352F2900EA9B84 /* 红高粱.pdf */; };
-		13C1A0D916352F2900EA9B84 /* 红树林.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13C1A0D116352F2900EA9B84 /* 红树林.pdf */; };
-		13C1A0DA16352F2900EA9B84 /* 师傅越来越幽默.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13C1A0D216352F2900EA9B84 /* 师傅越来越幽默.pdf */; };
-		13C1A0DB16352F2900EA9B84 /* 四十一炮.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13C1A0D316352F2900EA9B84 /* 四十一炮.pdf */; };
-		13C1A0DC16352F2900EA9B84 /* 透明的红萝卜.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13C1A0D416352F2900EA9B84 /* 透明的红萝卜.pdf */; };
-		13C1A0DD16352F2900EA9B84 /* 蛙.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13C1A0D516352F2900EA9B84 /* 蛙.pdf */; };
-		13C1A0DE16352F2900EA9B84 /* 檀香刑.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 13C1A0D616352F2900EA9B84 /* 檀香刑.pdf */; };
+		137DBC4416365A9B0029CCA3 /* 红高粱.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 137DBC3B16365A9B0029CCA3 /* 红高粱.pdf */; };
+		137DBC4516365A9B0029CCA3 /* 红树林.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 137DBC3C16365A9B0029CCA3 /* 红树林.pdf */; };
+		137DBC4616365A9B0029CCA3 /* 生死疲劳.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 137DBC3D16365A9B0029CCA3 /* 生死疲劳.pdf */; };
+		137DBC4716365A9B0029CCA3 /* 师傅越来越幽默.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 137DBC3E16365A9B0029CCA3 /* 师傅越来越幽默.pdf */; };
+		137DBC4816365A9B0029CCA3 /* 四十一炮.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 137DBC3F16365A9B0029CCA3 /* 四十一炮.pdf */; };
+		137DBC4916365A9B0029CCA3 /* 檀香刑.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 137DBC4016365A9B0029CCA3 /* 檀香刑.pdf */; };
+		137DBC4A16365A9B0029CCA3 /* 透明的红萝卜.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 137DBC4116365A9B0029CCA3 /* 透明的红萝卜.pdf */; };
+		137DBC4B16365A9B0029CCA3 /* 蛙.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 137DBC4216365A9B0029CCA3 /* 蛙.pdf */; };
+		138CE63916365DDC00CC7B74 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 138CE63416365DDC00CC7B74 /* Default-568h@2x.png */; };
+		138CE63A16365DDC00CC7B74 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 138CE63516365DDC00CC7B74 /* Default.png */; };
+		138CE63B16365DDC00CC7B74 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 138CE63616365DDC00CC7B74 /* Default@2x.png */; };
+		138CE63C16365DDC00CC7B74 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 138CE63716365DDC00CC7B74 /* Icon.png */; };
+		138CE63D16365DDC00CC7B74 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 138CE63816365DDC00CC7B74 /* icon@2x.png */; };
 		13C1A10116353AF500EA9B84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13C1A10016353AF500EA9B84 /* InfoPlist.strings */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -27,7 +32,6 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		450A670411D27B9D00014BF5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A670311D27B9D00014BF5 /* QuartzCore.framework */; };
 		4541A9D8122EA716001A5E60 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4541A9D7122EA716001A5E60 /* Localizable.strings */; };
-		4544D87C1610A3C2003DB132 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4544D87B1610A3C2003DB132 /* Default-568h@2x.png */; };
 		4555C74C14211A00005F448D /* ReaderBookDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4555C74B14211A00005F448D /* ReaderBookDelegate.m */; };
 		455C7891142687CA0053D73B /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 455C7890142687CA0053D73B /* UIXToolbarView.m */; };
 		455C789D14268F6A0053D73B /* Reader-Button-H.png in Resources */ = {isa = PBXBuildFile; fileRef = 455C789914268F6A0053D73B /* Reader-Button-H.png */; };
@@ -91,14 +95,19 @@
 		134E334116354E830039A4CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		134E3343163550970039A4CF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		134E3345163550AE0039A4CF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		13C1A0CF16352F2900EA9B84 /* 生死疲劳.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "生死疲劳.pdf"; sourceTree = "<group>"; };
-		13C1A0D016352F2900EA9B84 /* 红高粱.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "红高粱.pdf"; sourceTree = "<group>"; };
-		13C1A0D116352F2900EA9B84 /* 红树林.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "红树林.pdf"; sourceTree = "<group>"; };
-		13C1A0D216352F2900EA9B84 /* 师傅越来越幽默.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "师傅越来越幽默.pdf"; sourceTree = "<group>"; };
-		13C1A0D316352F2900EA9B84 /* 四十一炮.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "四十一炮.pdf"; sourceTree = "<group>"; };
-		13C1A0D416352F2900EA9B84 /* 透明的红萝卜.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "透明的红萝卜.pdf"; sourceTree = "<group>"; };
-		13C1A0D516352F2900EA9B84 /* 蛙.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "蛙.pdf"; sourceTree = "<group>"; };
-		13C1A0D616352F2900EA9B84 /* 檀香刑.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "檀香刑.pdf"; sourceTree = "<group>"; };
+		137DBC3B16365A9B0029CCA3 /* 红高粱.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "红高粱.pdf"; path = "Resources/红高粱.pdf"; sourceTree = "<group>"; };
+		137DBC3C16365A9B0029CCA3 /* 红树林.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "红树林.pdf"; path = "Resources/红树林.pdf"; sourceTree = "<group>"; };
+		137DBC3D16365A9B0029CCA3 /* 生死疲劳.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "生死疲劳.pdf"; path = "Resources/生死疲劳.pdf"; sourceTree = "<group>"; };
+		137DBC3E16365A9B0029CCA3 /* 师傅越来越幽默.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "师傅越来越幽默.pdf"; path = "Resources/师傅越来越幽默.pdf"; sourceTree = "<group>"; };
+		137DBC3F16365A9B0029CCA3 /* 四十一炮.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "四十一炮.pdf"; path = "Resources/四十一炮.pdf"; sourceTree = "<group>"; };
+		137DBC4016365A9B0029CCA3 /* 檀香刑.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "檀香刑.pdf"; path = "Resources/檀香刑.pdf"; sourceTree = "<group>"; };
+		137DBC4116365A9B0029CCA3 /* 透明的红萝卜.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "透明的红萝卜.pdf"; path = "Resources/透明的红萝卜.pdf"; sourceTree = "<group>"; };
+		137DBC4216365A9B0029CCA3 /* 蛙.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "蛙.pdf"; path = "Resources/蛙.pdf"; sourceTree = "<group>"; };
+		138CE63416365DDC00CC7B74 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		138CE63516365DDC00CC7B74 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		138CE63616365DDC00CC7B74 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		138CE63716365DDC00CC7B74 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		138CE63816365DDC00CC7B74 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		13C1A10016353AF500EA9B84 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/InfoPlist.strings; sourceTree = "<group>"; };
 		13C1A10E163548FD00EA9B84 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -242,6 +251,14 @@
 			path = Admob;
 			sourceTree = "<group>";
 		};
+		137DBC3316365A530029CCA3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
+			path = Resources/images;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +270,11 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				138CE63416365DDC00CC7B74 /* Default-568h@2x.png */,
+				138CE63516365DDC00CC7B74 /* Default.png */,
+				138CE63616365DDC00CC7B74 /* Default@2x.png */,
+				138CE63716365DDC00CC7B74 /* Icon.png */,
+				138CE63816365DDC00CC7B74 /* icon@2x.png */,
 				134E333216354E520039A4CF /* Frame */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				45BD5A7C13AE6C3B00D6FE97 /* Sources */,
@@ -278,14 +300,15 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				13C1A0CF16352F2900EA9B84 /* 生死疲劳.pdf */,
-				13C1A0D016352F2900EA9B84 /* 红高粱.pdf */,
-				13C1A0D116352F2900EA9B84 /* 红树林.pdf */,
-				13C1A0D216352F2900EA9B84 /* 师傅越来越幽默.pdf */,
-				13C1A0D316352F2900EA9B84 /* 四十一炮.pdf */,
-				13C1A0D416352F2900EA9B84 /* 透明的红萝卜.pdf */,
-				13C1A0D516352F2900EA9B84 /* 蛙.pdf */,
-				13C1A0D616352F2900EA9B84 /* 檀香刑.pdf */,
+				137DBC3B16365A9B0029CCA3 /* 红高粱.pdf */,
+				137DBC3C16365A9B0029CCA3 /* 红树林.pdf */,
+				137DBC3D16365A9B0029CCA3 /* 生死疲劳.pdf */,
+				137DBC3E16365A9B0029CCA3 /* 师傅越来越幽默.pdf */,
+				137DBC3F16365A9B0029CCA3 /* 四十一炮.pdf */,
+				137DBC4016365A9B0029CCA3 /* 檀香刑.pdf */,
+				137DBC4116365A9B0029CCA3 /* 透明的红萝卜.pdf */,
+				137DBC4216365A9B0029CCA3 /* 蛙.pdf */,
+				137DBC3316365A530029CCA3 /* images */,
 				45AB72DF141FC04B003524C3 /* README.md */,
 				45D5AD9E1610E66B00706B9A /* HISTORY.md */,
 				45AB72DD141FC043003524C3 /* LICENSE.md */,
@@ -467,17 +490,21 @@
 				455C789F14268F6A0053D73B /* Reader-Button-N.png in Resources */,
 				455C78A014268F6A0053D73B /* Reader-Button-N@2x.png in Resources */,
 				4583767F1533B0AC003CD230 /* AppIcon-144.png in Resources */,
-				4544D87C1610A3C2003DB132 /* Default-568h@2x.png in Resources */,
 				45D5AD9F1610E66B00706B9A /* HISTORY.md in Resources */,
-				13C1A0D716352F2900EA9B84 /* 生死疲劳.pdf in Resources */,
-				13C1A0D816352F2900EA9B84 /* 红高粱.pdf in Resources */,
-				13C1A0D916352F2900EA9B84 /* 红树林.pdf in Resources */,
-				13C1A0DA16352F2900EA9B84 /* 师傅越来越幽默.pdf in Resources */,
-				13C1A0DB16352F2900EA9B84 /* 四十一炮.pdf in Resources */,
-				13C1A0DC16352F2900EA9B84 /* 透明的红萝卜.pdf in Resources */,
-				13C1A0DD16352F2900EA9B84 /* 蛙.pdf in Resources */,
-				13C1A0DE16352F2900EA9B84 /* 檀香刑.pdf in Resources */,
 				13C1A10116353AF500EA9B84 /* InfoPlist.strings in Resources */,
+				137DBC4416365A9B0029CCA3 /* 红高粱.pdf in Resources */,
+				137DBC4516365A9B0029CCA3 /* 红树林.pdf in Resources */,
+				137DBC4616365A9B0029CCA3 /* 生死疲劳.pdf in Resources */,
+				137DBC4716365A9B0029CCA3 /* 师傅越来越幽默.pdf in Resources */,
+				137DBC4816365A9B0029CCA3 /* 四十一炮.pdf in Resources */,
+				137DBC4916365A9B0029CCA3 /* 檀香刑.pdf in Resources */,
+				137DBC4A16365A9B0029CCA3 /* 透明的红萝卜.pdf in Resources */,
+				137DBC4B16365A9B0029CCA3 /* 蛙.pdf in Resources */,
+				138CE63916365DDC00CC7B74 /* Default-568h@2x.png in Resources */,
+				138CE63A16365DDC00CC7B74 /* Default.png in Resources */,
+				138CE63B16365DDC00CC7B74 /* Default@2x.png in Resources */,
+				138CE63C16365DDC00CC7B74 /* Icon.png in Resources */,
+				138CE63D16365DDC00CC7B74 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
